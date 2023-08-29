@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;400;500;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk";
+}
+
+:root {
+  --primary-color: hsl(212, 45%, 89%);
+  --secondary-color:hsl(220, 15%, 55%);
+  --tertiary-color: hsl(218, 44%, 22%);
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  display: flex;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(14, 132, 12, 0.119);
+  border-radius: 1rem;
+}
+
+.even {
+  height: 21rem;
+  width: 15rem;
+}
+
+.first {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  display: grid;
+  justify-items: center;
+  grid-template-rows: auto 8rem auto;
+  border-radius: 1rem;
+  color: rgba(246, 247, 248, 0.507);
+  text-align: center;
+}
+
+.num {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.first-div {
+  font-size: 1rem;
+  display: grid;
+  place-content: center;
+  color: rgba(246, 247, 248, 0.603);
+  font-weight: 500;
+}
+
+.second-div {
+  width: 8rem;
+  height: 8rem;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+}
+
+.gr {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  display: grid;
+  align-items: center;
+}
+
+.third-div {
+  color: var(--primary-color);
+  font-size: 0.75rem;
+  display: grid;
+  width: 70%;
+  color: rgba(246, 247, 248, 0.605);
+}
+
+.small {
+  font-size: 0.75rem;
+}
+
+.second {
+  display: grid;
+  grid-template-columns: 80%;
+  justify-content: center;
+}
+
+.many-divs {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  border-radius: 0.3rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.6rem;
+  padding-right: 0rem;
+}
+
+.sfirst {
+  font-weight: 700;
+  display: grid;
+  align-items: center;
+}
+
+.ssecond {
+  display: grid;
+  align-content: space-between;
+}
+
+.sthird {
+  display: grid;
+  place-content: center;
+}
+
+.btn {
+  height: 2.5rem;
+  padding: 0rem 4.2rem;
+  background: var(--tertiary-color);
+  color: var(--primary-color);
+  border-radius: 2rem;
+  outline: transparent;
+  border: none;
+  font-weight: 700;
+}
+
+.red {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+
+.blue {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+}
+
+.green {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+
+.yellow {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+
+.colorbl {
+  color: var(--tertiary-color);
+  padding-right: 0.5rem;
+}
+
+.many-divs > div:nth-child(2) {
+  color: var(--secondary-color);
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto;
+}
+
+.many-divs > div:nth-child(1) {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-self: self-start;
+  align-items: center;
+}
+
+img {
+  width: 70%;
+}
+
+@media (width < 375px) {
+  .container {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+}/*# sourceMappingURL=style.css.map */
